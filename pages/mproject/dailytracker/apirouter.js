@@ -1,10 +1,10 @@
 module.exports = function(app)
 {
-    app.get('api/$[folderName]/aa',(req,res) => {
+    app.get('api/$[folderName]/dailytracker',(req,res) => {
         const isSuccess = true
         res.json({
             status:isSuccess ? "success" : "error",
-            apiid:"$[folder]/aa",
+            apiid:"$[folder]/dailytracker",
             result: {
 
             }

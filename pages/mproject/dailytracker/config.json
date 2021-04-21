@@ -1,6 +1,6 @@
 {
-    "name" : "aa",
-    "nameKor" : "에이에이",
+    "name" : "dailytracker",
+    "nameKor" : "업무일지",
     "isVisibleSideNav" : true,
     "isEnable" : true,
     "type" : "page",

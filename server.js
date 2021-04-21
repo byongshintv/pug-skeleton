@@ -4,7 +4,7 @@ const fs = require('fs');
 const pug = require('pug');
 const PORT = 3000;
 const app = express();
-app.locals.basedir = __dirname
+
 require("./router/main")(app)
 app.use(express.static("public"))
 app.set('views', __dirname + '/views');

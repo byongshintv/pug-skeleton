@@ -1,16 +1,18 @@
 {
   "dependencies": {
-    "@material/button": "^11.0.0",
-    "@material/ripple": "^11.0.0",
     "express": "^4.17.1",
-    "pug": "^3.0.2"
+    "pug": "^3.0.2",
+    "materialize-css": "^1.0.0-rc.2"
   },
   "scripts": {
     "build": "webpack",
     "inspect": "webpack --watch --mode development",
-    "server": "node server"
+    "server": "node server",
+    "createpage":"node createpage"
   },
   "devDependencies": {
+    "prompt": "^1.1.0",
+    "@types/materialize-css": "^1.0.9",
     "css-loader": "^5.2.2",
     "html-webpack-plugin": "^5.3.1",
     "node-sass": "^5.0.0",

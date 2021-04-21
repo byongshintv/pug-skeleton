@@ -1,0 +1,6 @@
+{
+    "tabOrder": $[tabOrder],
+    "name":"$[branchName]",
+    "nameKor":"$[branchKor]",
+    "type" : "branch"
+}

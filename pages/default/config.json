@@ -1,0 +1,8 @@
+{
+    "name" : "$[pageName]",
+    "nameKor" : "$[pageNameKor]",
+    "isVisibleSideNav" : true,
+    "isEnable" : true,
+    "type" : "page",
+    "tabOrder" : $[tabOrder]
+}

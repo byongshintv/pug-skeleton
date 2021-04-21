@@ -1,0 +1,12 @@
+extends ../../../views/main.pug
+block stylesheet
+    style
+        include $[pageName].css
+        
+block content
+    p $[pageName]($[pageNameKor])의 테스트 페이지입니다.
+
+block script
+    script
+        include $[pageName].js
+

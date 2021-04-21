@@ -1,14 +1,16 @@
 include sidebar.pug
-doctype html
 html(lang="ko")
     head
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title 테스트 pug 타이틀
-    body
+        title Document
+        link(rel="stylesheet", href="/css/index.css")
+        block stylesheet
+    body 
         +sidebar
-        .main 메인페이지입니다.
+        block content
         include footer.pug
         script(src="stylesheet", href='/css/index.js') 
         block script
+

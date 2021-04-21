@@ -1,0 +1,19 @@
+mixin sidebar(page)
+    .sidenav.sidenav-fixed
+        .collapsible.collapsible-accordion
+            each branch in sidebarData 
+                +sidebarBranch(branch)
+                
+
+mixin sidebarBranch(branch)
+    if branch.config.type === "branch"
+        li.bold #{branch.name || branch.config.name}
+            a.collapsible-header.waves-effect.waves-teal
+            .collapsible-body
+                ul
+                    each page in branch.list
+                        li 
+                            a(href=`/page/${branch.name}/${page.config.name}`) #{page.config.nameKor }
+    else
+        li 
+            a(href=`/page/${branch.name}`) #{branch.config.nameKor }
